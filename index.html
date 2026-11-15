@@ -295,10 +295,10 @@ footer .logo{color:var(--ground);font-size:24px;display:block;margin-bottom:6px}
 </div>
 <!-- FORM: get a free access key at web3forms.com (sign up with hello@virallo.agency) and paste it below -->
 <form action="https://api.web3forms.com/submit" method="POST" aria-label="Request a free audit">
-<input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+<input type="hidden" name="access_key" value="c6d07674-aab4-40ca-829e-2d61db3af73a">
 <input type="hidden" name="subject" value="New audit request — virallo.agency">
 <input type="hidden" name="from_name" value="virallo.agency">
-<input type="hidden" name="redirect" value="https://virallo.agency/thanks.html">
+<input type="hidden" name="redirect" id="redirect" value="https://virallo.agency/thanks.html">
 <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <label>Your name<input type="text" name="name" required autocomplete="name"></label>
 <label>Business name<input type="text" name="business" required autocomplete="organization"></label>
@@ -331,5 +331,6 @@ footer .logo{color:var(--ground);font-size:24px;display:block;margin-bottom:6px}
 </div>
 </footer>
 
+<script>document.getElementById("redirect").value = location.origin + "/thanks.html";</script>
 </body>
 </html>
