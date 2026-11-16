@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://virallo.agency/">
 <link rel="canonical" href="https://virallo.agency/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,7 +38,8 @@ p{margin:0}
 /* nav */
 header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(246,244,239,.94);backdrop-filter:blur(8px);z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.5px;text-decoration:none}
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo img{display:block;height:32px;width:auto}
 .logo span{color:var(--accent)}
 .navlinks{display:flex;gap:28px}
 .navlinks a{text-decoration:none;font-size:15px;font-weight:500}
@@ -129,14 +130,15 @@ details p{color:var(--body);margin-top:10px}
 footer{background:var(--ink);color:var(--on-dark);padding:48px 0}
 footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
 footer a{color:var(--ground)}
-footer .logo{color:var(--ground);font-size:24px;display:block;margin-bottom:6px}
+footer .logo{margin-bottom:10px}
+footer .logo img{height:36px}
 </style>
 </head>
 <body>
 
 <header>
 <div class="wrap nav">
-<a class="logo" href="#top">virallo<span>.</span></a>
+<a class="logo" href="#top"><img src="logo.png" alt="Virallo" width="105" height="32"></a>
 <nav class="navlinks" aria-label="Main">
 <a href="#how">How it works</a>
 <a href="#work">Our work</a>
@@ -326,7 +328,7 @@ footer .logo{color:var(--ground);font-size:24px;display:block;margin-bottom:6px}
 
 <footer>
 <div class="wrap">
-<div><a class="logo" href="#top">virallo<span style="color:var(--accent)">.</span></a><p>Short-form content for Australian brands. Since 2016.</p></div>
+<div><a class="logo" href="#top"><img src="logo-white.png" alt="Virallo" width="118" height="36"></a><p>Short-form content for Australian brands. Since 2016.</p></div>
 <div><p><a href="mailto:hello@virallo.agency">hello@virallo.agency</a></p><p>PT Seva Solusi Digital · Jakarta, Indonesia</p></div>
 </div>
 </footer>
